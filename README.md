@@ -5,9 +5,10 @@ This might be a gem one day, but for now, it's a copy-paste service class that m
 
 ## Requirements
 
+- `gem 'aws-sdk', '~> 2.3'`
 - `ENV['AWS_REGION']`
-- `ENV['AWS_S3_BUCKET']`
-- set your "root" in the class, unless you're ok with "files". This lets you have other stuff in the same bucket, kept separate.
+- `ENV['AWS_S3_BUCKET']`—only one bucket here. If you want to have lots of files, simply add directory structure.
+- Set your "root" in the class, unless you're ok with "files". This lets you have other stuff in the same bucket, kept separate.
 
 ## Example use
 ```
